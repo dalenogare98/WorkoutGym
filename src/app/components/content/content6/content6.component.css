@@ -1,0 +1,36 @@
+.content6 {
+  height: 416px;
+  margin-top: -200px;
+}
+
+iframe {
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
+.border {
+  background-color: #818285;
+  height: 18px;
+  width: 100%;
+  margin-top: -5px;
+}
+
+@media (max-width: 1500px) {
+  .content6 {
+    height: 336px;
+  }
+  iframe {
+    height: 320px;
+  }
+}
+@media (max-width: 768px) {
+  .content6 {
+    margin-top: -300px;
+  }
+}
+
+@media (max-width: 360px) {
+  .content6 {
+    margin-top: -300px;
+  }
+}

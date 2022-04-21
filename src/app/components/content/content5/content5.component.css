@@ -1,0 +1,271 @@
+.content5 {
+  height: 750px;
+  width: 99.1vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: -164px;
+  width: 464px;
+  height: 164px;
+  padding-left: 50px;
+}
+
+.button {
+  position: absolute;
+  height: 160px;
+  width: 464px;
+  margin-top: -164px;
+  margin-left: 464px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+button {
+  margin-left: auto;
+  margin-right: 40px;
+  width: 122px;
+  height: 40px;
+}
+
+h3 {
+  padding-top: 25px;
+}
+
+.subtitle {
+  position: absolute;
+  margin-top: 80px;
+}
+
+.contact {
+  height: 457px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -140px;
+}
+
+.info,
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  height: 368px;
+}
+
+.info {
+  color: black;
+  margin-right: auto;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 300px;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: -5px;
+}
+
+.imgBolao {
+  width: 928px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 46px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.form {
+  height: 500px;
+  width: 468px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
+  margin-top: 120px;
+  background-color: white;
+  z-index: +5;
+  color: black;
+  display: flex;
+}
+
+a {
+  color: black;
+}
+
+form {
+  height: 488px;
+  width: inherit;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 35px;
+}
+
+input,
+textarea {
+  padding: 16px 0px;
+  width: 384px;
+  border: none;
+  border-bottom: 1px solid #818285;
+  margin-bottom: 20px;
+  display: flex;
+  color: black;
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+textarea {
+  height: 90px;
+  resize: none;
+}
+
+.message {
+  padding-bottom: 100px;
+}
+
+::placeholder {
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.formButton {
+  margin: 0;
+  align-self: flex-start;
+  justify-self: flex-end;
+  margin-top: 0px;
+  margin-left: 40px;
+  margin-top: -10px;
+}
+
+.content5 {
+  margin-top: 100px;
+}
+
+.bolao {
+  margin-top: -80px;
+}
+
+.disclaimer{
+  margin: 0;
+  padding: 16px 0px;
+  width: 384px;
+  margin-top: -30px;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 1850px) {
+  .contact {
+    width: 928px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content5,
+  .info {
+    width: 100%;
+  }
+
+  .infos {
+    height: 250px;
+  }
+
+  .content5 {
+    height: 500px;
+  }
+
+  .bolao {
+    display: none;
+  }
+
+  .form {
+    display: none;
+  }
+
+  .phone {
+    margin-bottom: -20px;
+  }
+
+  .contact {
+    width: 80%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: -110px;
+  }
+
+  h2 {
+    align-self: center;
+    margin-bottom: 10px;
+  }
+
+  .section {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  p {
+    width: 80%;
+    margin-top: 0px;
+  }
+
+}
+
+@media (max-width: 360px) {
+
+  .contact {
+    width: 80%;
+    margin-top: -111px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+  
+  .info {
+    height: 300px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,180 @@
+.bolao {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 125px);
+  background-color: #000000;
+  margin-top: 125px;
+}
+
+.image {
+  margin-top: 50px;
+  width: 59,375%;
+  height: 612px;
+  display: flex;
+}
+
+img {
+  height: 612px;
+}
+
+.desPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px;
+  width: 40.625%;
+  height: 416px;
+  margin-left: 20%;
+  margin-top: 60px;
+  z-index: +2;
+}
+
+.description {
+  width: 520px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+a {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: white;
+  text-decoration: none;
+  width: 260px;
+  margin: 5px 0px;
+}
+
+a:hover {
+  background-color: #e26725;
+}
+
+@media (max-width: 1520px) {
+  .desPrice {
+    margin-left: 13.9%;
+  }
+
+  .description {
+    width: 500px;
+  }
+
+  img {
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 1120px) {
+  .desPrice {
+    margin-left: 8%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .description {
+    width: 500px;
+  }
+
+  .image {
+    margin-right: 0px;
+    width: 59%;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 1185px) {
+  img {
+    width: 470px;
+    height: 557px;
+  }
+}
+
+@media (max-width: 1000px) {
+  img,
+  .image {
+    display: none;
+  }
+
+  .desPrice {
+    align-self: center;
+    justify-content: center;
+    width: 520px;
+  }
+
+  .bolao {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .bolao {
+    width: 100%;
+    height: calc(100vh - 128px);
+    margin-top: 0px;
+  }
+
+  .desPrice {
+    width: 100%;
+    align-items: center;
+    margin-top: -300px;
+  }
+
+  .description {
+    width: 80%;
+    margin-bottom: 12%;
+  }
+
+  h1,
+  p {
+    width: 100%;
+  }
+
+  h1 {
+    margin: 0;
+    margin-bottom: 12%;
+    height: 104px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 291px) {
+  h1 {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-height: 767px) {
+  img {
+    height: 80%;
+    margin-top: -40px;
+  }
+
+  .desPrice {
+    margin-top: 0px;
+  }
+
+  .bolao {
+    height: 100vh;
+  }
+}
+
+@media (max-height: 650px) {
+
+  img {
+    height: 70%;
+  }
+}
+

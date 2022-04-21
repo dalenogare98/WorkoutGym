@@ -1,0 +1,24 @@
+<div class="header">
+    <div class="image"><img routerLink="/" (click)="changeColor('none')" (click)="scrollTo('top')" src="../../../../assets/logo.png" alt="logo"></div>
+    <div class="list">
+        <ul (click)="changeVisibility()">
+            <div class="listModal">
+                <li [ngClass]="visibility ? 'visible' : 'notVisible'" routerLink="/bolaobrasileirao"><p>Brasileirão</p></li>
+                <li class="text about nav" routerLink="/" (click)="changeColor('about')" (click)="scrollTo('about')" [ngClass]="visibility ? 'visible' : 'notVisible'"><p>Sobre</p></li>
+                <li class="text services nav" routerLink="/" (click)="changeColor('services')"(click)="scrollTo('services')" [ngClass]="visibility ? 'visible' : 'notVisible'"><p>Serviços</p></li>
+                <li class="text gallery nav" routerLink="/" (click)="changeColor('gallery')"(click)="scrollTo('gallery')" [ngClass]="visibility ? 'visible' : 'notVisible'"><p>Galeria</p></li>
+                <li class="text hours nav" routerLink="/" (click)="changeColor('hours')"(click)="scrollTo('time')" [ngClass]="visibility ? 'visible' : 'notVisible'"><p>Horários</p></li>
+                <li class="text prices nav" routerLink="/" (click)="changeColor('prices')"(click)="scrollTo('plans')" [ngClass]="visibility ? 'visible' : 'notVisible'"><p>Preços</p></li>
+                <li class="text contact nav" routerLink="/" (click)="changeColor('contact')"(click)="scrollTo('contact')" [ngClass]="visibility ? 'visible' : 'notVisible'"><p>Contato</p></li>
+            </div>
+                <li class="icon"><a href="https://www.instagram.com/workoutgymfloripa/" target="_blank">
+                    <img src="../../../../assets/instagramIcon.png" alt="">
+                </a>
+            </li>
+            <li class="icon facebook"><a href="https://www.facebook.com/WorkoutGymFloripa" target="_blank">
+                <img src="../../../../assets/facebookIcon.png" alt="">
+            </a>
+        </li>
+        </ul>
+    </div>
+</div>

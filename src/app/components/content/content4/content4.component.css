@@ -1,0 +1,255 @@
+.content4 {
+  width: 99.1vw;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time {
+  width: 544px;
+  height: 364px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -250px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+.title h2 {
+  padding-bottom: 33px;
+  margin: 0;
+  color: black;
+}
+
+.times {
+  width: 100%;
+  height: 272px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.15));
+}
+
+.openTime1,
+.openTime2 {
+  width: 448px;
+  height: 112px;
+  display: flex;
+  align-items: center;
+}
+
+.openTime1 {
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.bottomTime {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e26725;
+}
+
+.days {
+  color: black;
+}
+
+.hours {
+  margin-left: auto;
+  color: #818285;
+}
+
+.planPrices {
+    height: 457px;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.planCards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.planCard {
+    width: 280px;
+    height: 256px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
+    background-color: white;
+}
+
+.planTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    background-color: black;
+}
+
+.monthly, .semiannual {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 104px;
+}
+
+.monthly>p, .semiannual>p {
+  align-self: center;
+}
+
+.semiannual {
+    margin-top: -20px;
+}
+
+.subtitle {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    margin-top: -15px;
+    color: black;
+    padding-left: 86px;
+}
+
+
+.month {
+    color: #818285;
+}
+
+.disclaimer {
+    margin-top: 20px;
+    color: black;
+}
+.disclaimerDiv {
+  height: 24px;
+}
+
+.seePlans {
+    width: 228px;
+    height: 40px;
+    margin-top: 40px;
+}
+
+h3, .inline {
+  display: inline;
+}
+
+.inline { 
+  position: absolute;
+  margin-top: 8px;
+}
+
+@media (max-width: 1850px) {
+.planPrices {
+    width: 928px;
+  }
+}
+
+@media (max-width: 768px) {
+    .content4 {
+      width: 100%;
+      margin-top: -100px;
+      height: 1250px;
+    }
+
+    .notOpen {
+      text-align: center;
+    }
+
+    .times {
+      width: 100%
+    } 
+
+    .time {
+      width: 80%;
+    }
+
+    .openTime1, .openTime2 {
+      width: 80%;
+    }
+
+    .days {
+      text-align: start;
+      margin-left: 20px;
+    }
+
+    .hours {
+      margin-right: 20px;
+      text-align: end;
+      width: 127.2px;
+    }
+
+    .planPrices {
+      width: 100%;
+      height: 1500px;
+    }
+
+    .planCards {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .planCard {
+      width: 80%;
+      margin-bottom: 30px;
+    }
+
+    .subtitle {
+      margin-top: -40px;
+    }
+
+    .disclaimer {
+      font-size: 10px;
+    }
+
+    .disclaimerDiv {
+      width: 80%;
+    }
+
+    .first {
+      margin-bottom: 0px;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    .seePlans {
+      margin-top: 30px;
+      z-index: +10;
+    }
+
+    h3 {
+      align-self: center;
+      padding-left: 0;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .first {
+      margin-bottom: 20px;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+}

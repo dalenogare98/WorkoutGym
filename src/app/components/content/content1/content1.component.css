@@ -1,0 +1,200 @@
+.content1 {
+    display: flex;
+    width: 100%;
+    height: 52,1875%;
+    background-color: #000000;
+    margin-top: 125px;
+  }
+  
+  .image {
+    margin-top: 0px;
+    width: 59,375%;
+    height: 48.75%;
+    display: flex;
+  }
+  
+  img {
+      margin-left: -20%;
+      margin-bottom: 0px; 
+  }
+  
+  .desPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px;
+    width: 40.625%;
+    height: 416px;
+    margin-left: 20%;
+    margin-top: 140px;
+    z-index: +2;
+  }
+  
+  .description {
+      width: 520px;
+      height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 0px;
+  }
+  
+  .description h1 {
+      margin-top: 0px;
+  }
+  
+  .description p {
+      margin-top: -25px;
+  }
+
+  h3, .inline {
+      display: inline-block;
+  }
+
+  .top {
+      margin-top: 32px;
+      margin-bottom: -5px;
+  } 
+
+  h2 {
+    margin-top: -50px;
+  }
+
+  h3 {
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
+  
+  .seePlans {
+    width: 148px;
+    height: 44px;
+    margin-top: -4px;
+  }
+
+  @media (max-width: 1520px) {
+    .desPrice {
+      margin-left: 13.9%;
+    }
+
+    .description {
+      width: 500px;
+    }
+
+    img {
+      margin-left: 0%;
+    }
+    
+  }
+
+  @media (max-width: 1120px) {
+    .desPrice {
+      margin-left: 8%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .description {
+      width: 500px;
+    }
+
+    .image {
+      margin-right: 0px;
+      width: 59%;
+      justify-content: flex-end;
+    }
+  }
+  @media (max-width: 1185px) {
+    .image {
+      height: 100%;
+      align-items: flex-end;
+      background-color: black;
+    }
+    img {
+      width: 470px;
+      height: 557px;
+      margin-right: 0px;
+    }
+
+    .image {
+      margin-bottom: 0px;
+    }
+
+    .content1 {
+      height: 600px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .image {
+      display: none;
+    }
+    
+    .content1 {
+      width: 100%;
+      height: 500px;
+      margin-top: -40px;
+    }
+
+    .description {
+      padding-top: 100px;
+      pointer-events: none;
+    }
+
+    .description, .desPrice {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .description {
+      width: 80%;
+    }
+
+    .price {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: -30px;
+    }
+
+    h1{
+      margin: 0;
+      height: 104px;
+      width: 280px;
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    h2 {
+      font-size: 16px;
+      width: 280px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 32px;
+      width: 280px;
+    }
+
+    .inline, .top {
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    .top {
+      margin-bottom: -5px;
+    }
+
+    .inline {
+      margin-top: -5px;
+    }
+
+    .seePlans {
+      margin-top: -10px;
+      height: 40px;
+    }
+  }

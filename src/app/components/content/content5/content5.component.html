@@ -1,0 +1,43 @@
+<div class="content5">
+        <div class="bolao" id="bolao">
+            <img class="imgBolao" src="../../../../assets/imagemBolao.png" alt="">
+            <div class="text">
+                <h3>Bolão da Workout</h3>
+                <p class="subtitle">Gosta de futebol? Participe do nosso bolão! </p>
+            </div>
+            <div class="button">
+                <button routerLink="/bolaobrasileirao">
+                    <p class="alt1">Acessar</p>
+                </button>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="info">
+                <h2 id="contact">Vamos nos falar?</h2>
+                <div class="infos">
+                    <div class="section">
+                        <img class="icon" src="../../../../assets/locationImg.png" alt="">
+                        <p>R. Eduardo Gonçalves D Ávila, 150 - Itacorubi</p>
+                    </div>
+                    <div class="section phone">
+                        <img class="icon" src="../../../../assets/phoneImg.png" alt="">
+                        <p><a href="https://api.whatsapp.com/send?phone=+55483204-7684<>">(48) 3204-7684</a></p>
+                    </div>
+                    <div class="section">
+                        <img class="icon" src="../../../../assets/mailImg.png" alt="">
+                        <p>workoutgym@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <form id="form" method="GET">
+                    <input type="text" id="name" placeholder="Nome">
+                    <input type="number" id="phone" placeholder="Telefone">
+                    <input type="email" id="" placeholder="Email">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+                    <p class="alt disclaimer">Ao enviar a mensagem, você permite que a Workout tenha acesso aos seus dados de contato.</p>
+                    <button (click)="mailMe()" value="" class="formButton"><p class="alt1">Enviar</p></button> 
+                </form>
+            </div>
+        </div>
+</div>

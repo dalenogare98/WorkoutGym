@@ -1,0 +1,23 @@
+<div class="content3">
+    <div id="fullImageBox" class="fullImageBox">
+        <div class="imgWrapper">
+            <span (click)="changeImage('previous')" class="left">❮</span>
+            <img src="../../../../assets/img1ol.png" id="fullImage">
+            <span (click)="changeImage('next')" class="right">❯</span>
+        </div>
+        <span class="close" (click)="closeFullImg()">X</span>
+    </div>
+    <div class="gallery">
+        <div class="title" id="gallery" ><h2>Galeria</h2></div>
+        <div class="firstImages">
+            <img class="galleryImage1" src="../../../../assets/img1ol.png" alt="" (click)="openFullImg('../../../../assets/img1ol.png')">
+            <img class="galleryImage2" src="../../../../assets/img2ol.png" alt="" (click)="openFullImg('../../../../assets/img2ol.png')">
+            <img class="galleryImage3" src="../../../../assets/img3ol.png" alt="" (click)="openFullImg('../../../../assets/img3ol.png')">
+        </div>
+        <div class="lastImages">
+            <img class="galleryImage4" src="../../../../assets/img4.png" alt="" (click)="openFullImg('../../../../assets/img4ol.png')">
+            <img class="galleryImage5" src="../../../../assets/img5.png" alt="" (click)="openFullImg('../../../../assets/img5ol.png')">
+            <img class="galleryImage6" src="../../../../assets/img6.png" alt="" (click)="openFullImg('../../../../assets/img6ol.png')">
+        </div>
+    </div>
+</div>
