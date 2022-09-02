@@ -32,19 +32,19 @@ export class Content3Component implements OnInit {
     var lastNumber = Number(onlyNumbers.substring(onlyNumbers.length - 1));
     var image = document.getElementById("fullImage")
     if(nextOrPrev == 'next') {
-      if (fullImage.includes('img6ol')) {
-        image?.setAttribute("src", "../../../../assets/img1ol.png")
+      if (fullImage.includes('img6')) {
+        image?.setAttribute("src", "../../../../assets/img1.jpeg")
       }
       else {
-        image?.setAttribute("src", `../../../../assets/img${lastNumber + 1}ol.png`)
+        image?.setAttribute("src", `../../../../assets/img${lastNumber + 1}.jpeg`)
       }
     }
     else {
-      if (fullImage.includes('img1ol')) {
-        image?.setAttribute("src", "../../../../assets/img6ol.png")
+      if (fullImage.includes('img1')) {
+        image?.setAttribute("src", "../../../../assets/img6.jpeg")
       }
       else {
-        image?.setAttribute("src", `../../../../assets/img${lastNumber - 1}ol.png`)
+        image?.setAttribute("src", `../../../../assets/img${lastNumber - 1}.jpeg`)
       }
     }
   }
