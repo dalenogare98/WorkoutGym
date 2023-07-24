@@ -20,8 +20,9 @@ mailMe(){
   const name = (document.getElementById('name') as HTMLInputElement).value;
   const phone = (document.getElementById('phone') as HTMLInputElement).value;
   const message = (document.getElementById('message') as HTMLInputElement).value;
-  window.location.href = "mailto:dalenogare98@gmail.com?subject=Dúvida sobre a academia"+"&body="+"Nome:  " + name + "%0D%0A"+ "Telefone:  " + phone + "%0D%0A" + "Mensagem:  " + message
+  window.location.href = "mailto:workoutgym@gmail.com?subject=Dúvida sobre a academia"+"&body="+"Nome:  " + name + "%0D%0A"+ "Telefone:  " + phone + "%0D%0A" + "Mensagem:  " + message
   const resetForm = <HTMLFormElement>document.getElementById('form');
   resetForm.reset()
 }
 }
+
