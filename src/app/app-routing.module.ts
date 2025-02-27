@@ -9,6 +9,7 @@ const routes: Routes = [
   {path: "", component: HomeComponent},
   {path: "bolaobrasileirao", component: BolaoComponent},
   {path: "bolaocopadomundo", component: BolaocopaComponent},
+  {path: "**", redirectTo: "", pathMatch: 'full'},
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
