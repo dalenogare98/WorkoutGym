@@ -1,0 +1,46 @@
+{
+  "plans": [
+    {
+      "title": "Musculação",
+      "monthly": {
+        "label": "Mensal *",
+        "price": "R$160,00"
+      },
+      "semiannual": {
+        "label": "Semestral",
+        "price": "R$135,00",
+        "perMonthNote": "/mês"
+      }
+    },
+    {
+      "title": "Pilates 1x na semana",
+      "monthly": {
+        "label": "Mensal *",
+        "price": "R$235,00"
+      },
+      "semiannual": {
+        "label": "Semestral",
+        "price": "R$215,00",
+        "perMonthNote": "/mês"
+      }
+    },
+    {
+      "title": "Pilates 2x na semana",
+      "monthly": {
+        "label": "Mensal *",
+        "price": "R$320,00"
+      },
+      "semiannual": {
+        "label": "Semestral",
+        "price": "R$295,00",
+        "perMonthNote": "/mês"
+      }
+    }
+  ],
+  "disclaimers": [
+    "* Valor mensal para pagamento à vista no <u>dinheiro ou pix</u>.",
+    "** A contratação do plano só será efetivada <u>após a assinatura do contrato.</u>"
+  ],
+  "pricesPdfPath": "assets/tabela_de_precos_2025.pdf"
+}
+

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,7 +9,6 @@ import { Content1Component } from './components/content/content1/content1.compon
 import { NavComponent } from './components/template/nav/nav.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './components/view/home/home.component';
-import { PlanComponent } from './components/view/plan/plan.component';
 import { Content2Component } from './components/content/content2/content2.component';
 import { Content3Component } from './components/content/content3/content3.component';
 import { Content4Component } from './components/content/content4/content4.component';
@@ -26,7 +26,6 @@ import { NavBolaoCopaComponent } from './components/view/bolaocopa/nav-bolao-cop
     FooterComponent,
     NavComponent,
     HomeComponent,
-    PlanComponent,
     Content1Component,
     Content2Component,
     Content3Component,
@@ -41,7 +40,8 @@ import { NavBolaoCopaComponent } from './components/view/bolaocopa/nav-bolao-cop
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
