@@ -10,27 +10,17 @@
         <div class="planPrices">
             <div class="title" id="plans"><h2>Planos e Preços</h2></div>
             <div class="planCards">
-                <div class="planCard">
-                    <div class="planTitle"><p class="alt1">Musculação</p></div>
-                    <div class="monthly"><p class="month">Mensal *</p><h3>R$160,00</h3></div>
-                    <div class="semiannual"><p class="month">Semestral</p><h3>R$135,00<p class="alt inline" style="color: black">/mês</p></h3></div>
+                <div class="planCard" *ngFor="let plan of plans">
+                    <div class="planTitle"><p class="alt1">{{ plan.title }}</p></div>
+                    <div class="monthly"><p class="month">{{ plan.monthly.label }}</p><h3>{{ plan.monthly.price }}</h3></div>
+                    <div class="semiannual"><p class="month">{{ plan.semiannual.label }}</p><h3>{{ plan.semiannual.price }}<p class="alt inline" style="color: black" *ngIf="plan.semiannual.perMonthNote">{{ plan.semiannual.perMonthNote }}</p></h3></div>
                 </div>
-                <div class="planCard">
-                    <div class="planTitle"><p class="alt1">Pilates 1x na semana</p></div>
-                    <div class="monthly"><p class="month">Mensal *</p><h3>R$235,00</h3></div>
-                    <div class="semiannual"><p class="month">Semestral</p><h3>R$215,00<p class="alt inline" style="color: black">/mês</p></h3></div>
-                </div>
-                <div class="planCard">
-                    <div class="planTitle"><p class="alt1">Pilates 2x na semana</p></div>
-                    <div class="monthly"><p class="month">Mensal *</p><h3>R$320,00</h3></div>
-                    <div class="semiannual"><p class="month">Semestral</p><h3>R$295,00<p class="alt inline" style="color: black">/mês</p></h3></div>
-                </div>
-                
             </div>
             <div class="subtitle">
-                <div class="disclaimerDiv first"><p class="alt disclaimer">* Valor mensal para pagamento à vista no <u>dinheiro ou pix</u>.</p></div>
-                <div class="disclaimerDiv"><p class="alt disclaimer">** A contratação do plano só será efetivada <u>após a assinatura do contrato.</u></p></div>
-                <form action="../../../../assets/tabela_de_precos_2025.pdf" method="get" target="blank">
+                <div class="disclaimerDiv" *ngFor="let text of disclaimers; let i = index" [ngClass]="{ 'first': i === 0 }">
+                    <p class="alt disclaimer" [innerHTML]="text"></p>
+                </div>
+                <form [attr.action]="pricesPdfPath" method="get" target="blank">
                     <button class="seePlans"><p class="alt1">Ver todas as opções</p></button>
                 </form>
             </div>
